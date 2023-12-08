@@ -1,0 +1,39 @@
+<!-- templates/result_feedback.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Feedback</title>
+</head>
+<body>
+    <h1>Result Feedback</h1>
+
+    <p><strong>Recommended Exercises:</strong></p>
+    <pre>{{ rec_ac }}</pre>
+
+    <p><strong>Recommended Diet:</strong></p>
+    <pre>{{ rec_fd }}</pre>
+
+    <p><strong>Personal Feedback:</strong></p>
+    <pre>{{ rec_pd }}</pre>
+
+    <p><strong>Recommended Stress Relief:</strong></p>
+    <pre>{{ rec_ta }}</pre>
+
+    <p><strong>Body Parts Result:</strong></p>
+    <pre>{{ body_parts_result }}</pre>
+
+    {% if body_check_image %}
+        <p><strong>Body Check Image:</strong></p>
+        <img src="{{ body_check_image }}" alt="Body Check Image">
+    {% else %}
+        <p>No Body Check Image available</p>
+    {% endif %}
+
+    <!-- Add other content as needed -->
+
+</body>
+</html>

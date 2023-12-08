@@ -1,0 +1,34 @@
+<!-- myapp/templates/index.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>My Web App</title>
+</head>
+<body>
+    <h1>결과:</h1>
+    <p>{{ result }}</p>
+
+    <h2>운동 추천:</h2>
+    <ul>
+
+            <li>{{ feedback_ac }}</li>
+        
+    </ul>
+
+    <h2>식단표:</h2>
+
+
+         
+                <li>{{feedback_fd}}</li>
+
+
+                
+    <h2>피드백:</h2>
+    <p>{{ feedback_pd }}</p>
+
+    <h2>추천 운동 및 차:</h2>
+    <p>운동: {{ feedback_ta.0}}</p>
+    <p>차: {{ feedback_ta.1 }}</p>
+</body>
+</html>
